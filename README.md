@@ -154,9 +154,11 @@ pytest
 
 ## Preguntas de Análisis
 
-### 1. ¿Cuántos bits cambiaron entre los dos hashes SHA-256 de `"MediSoft-v2.1.0"` y `"medisoft-v2.1.0"`? ¿Qué propiedad demuestra este resultado?
+### 1.1. ¿Cuántos bits cambiaron entre los dos hashes SHA-256? Usen XOR para contarlos. ¿Qué propiedad demuestra esto?
+Al comparar los hashes SHA-256 de las cadenas "MediSoft-v2.1.0" y "medisoft-v2.1.0", se pudo ver que al final de todo el procedimiento fueron 120 bits los que cambiaron. Este cambio demuestra lo que vimos en clase, la propiedad avalancha, que establece que al tener un pequeño cambio en la entrada, produce una salida totalmente diferente en el hash. En funciones como la funcion SHA-256, se espera que aproximadamente la mitad de los bits cambien, lo cual se cumple en este caso. 
 
-### 2. Con base en la longitud en bits, ¿por qué MD5 es considerado inseguro para integridad de archivos?
+### 1.2. Con base en la longitud en bits, explica por qué MD5 es considerado inseguro para integridad de archivos 
+MD5 es considerado inseguro para garantizar la integridad de archivos principalmente debido a que produce hashes de solo 128 bits El MD5 es cosiderado inseguro para la integridad de archvos debido a que su funcion de hash solo produce hashes de 128 bits, lo cual es la mitad de lo que representa la salida de un algoritmo como el SHA-256, lo cual es un espacio de salida menor en comparación con algoritmos modernos como SHA-256. Esta salida menor significa que dos entradas distintas tiene mayor probabilidad de generar un mismo hash. Además, MD5 presenta vulnerabilidades criptográficas conocidas que permiten generar colisiones de forma intencional, lo cual compromete directamente su confiabilidad.
 
 ### 3. ¿Qué demuestra la consulta a HIBP sobre el uso de contraseñas comunes?
 
