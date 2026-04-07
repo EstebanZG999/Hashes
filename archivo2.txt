@@ -1,0 +1,3 @@
+Configuration profile for laboratory analyzer
+Mode: diagnostics
+Calibration: enabled

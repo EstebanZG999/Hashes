@@ -1,0 +1,3 @@
+Emergency contact
+Vendor: MediSoft S.A.
+Support email: soporte@medisoft.example

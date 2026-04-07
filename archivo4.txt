@@ -1,0 +1,4 @@
+Changelog
+- Fixed checksum validation issue
+- Improved update delivery process
+- Added audit logging

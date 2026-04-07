@@ -1,0 +1,3 @@
+Authorized hospital portal
+Administrator: hospital_it_admin
+Access level: full
