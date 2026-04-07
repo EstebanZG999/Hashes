@@ -21,7 +21,6 @@ El objetivo es demostrar, tanto de forma practica como conceptual, como se utili
 - Implementar verificacion de integridad de archivos usando SHA-256 con Python.
 - Demostrar experimentalmente por que MD5 y SHA-1 no deben usarse en sistemas modernos.
 - Implementar mecanismos seguros para autenticidad e integridad de artefactos distribuidos.
-- Disenar y ejecutar pruebas automatizadas con `pytest`.
 
 ## Estructura del Proyecto
 
@@ -131,12 +130,6 @@ python firmar_manifiesto.py
 
 ```bash
 python verificar_firma.py
-```
-
-### 8. Ejecucion de pruebas
-
-```bash
-pytest
 ```
 
 ## Ejemplos de Ejecucion
